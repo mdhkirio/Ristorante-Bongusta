@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Principal</title>
+        <link rel="shortcut icon" href="./assets/icons/Logo.ico" type="image/x-icon" />
+         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+    <body">
+        <header class="grid-header">
+            <div>
+                <a href="../index.html">
+                    <img src="../images/Logo.svg" alt="Logo restauramte" />
+                </a>
+                <h1>Ristorante Bongusta</h1>
+            </div>
+            <div class="grid-header__nav">
+                <nav>
+                    <ul>
+                        <a href="../index.html">
+                            <li>Principal</li>
+                        </a>
+                        <a href="../pages/menu.html">
+                            <li>Menú</li>
+                        </a>
+                        <a href="../pages/reservas.html">
+                            <li>Reservas</li>
+                        </a>
+                        <a href="../pages/eventos.html">
+                            <li>Eventos</li>
+                        </a>
+                        <a href="../pages/contacto.html">
+                            <li>Contacto</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Contacto -->
+            <section>
+                <h2>Contacto</h2>
+                <form action="RecabarComentario.php" method="get" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend> Envíanos tu comentario</legend>
+                        <div class="grid-datos-contacto">
+                            <div>
+                                <div>
+                                    <label for="ContactoNombre">Nombre</label>
+                                    <input type="text" id="ContactoNombre" placeholder="Nombre del cliente" />
+                                </div>
+                                <div>
+                                <label for="ContactoTipo">Tipo</label>
+                                    <select id="ContactoTipo">
+                                        <option value="">Queja</option>
+                                        <option value="">Comentario</option>
+                                        <option value="">Consulta</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="ContactoCorreo">correo electrónico</label>
+                                    <input type="email" id="ContactoCorreo" placeholder="@" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="ContactoMensaje">Mensaje</label>
+                                <textarea id="ContactoMensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar formulario</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h6>Copyright 2022 © Ristorante Bongusta. Todos los derechos reservados.</h6>
+        </footer>
+    </body>
+</html>
