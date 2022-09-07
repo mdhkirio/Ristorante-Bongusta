@@ -9,14 +9,21 @@ body
     /* font-family: 'Roboto'; */
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    background-color: #9c9383;
+    /* background-color: #4237a5;  */
+    background-image: linear-gradient(to right, #8b8b87, #4d433b);
 }
 
 .grid-header
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #897652; 
+    /* background-color: #ae75e6;   */
+    background-image: linear-gradient(to right, #b18e37, #c7b6a9);
+}
+
+.grid-header__logo
+{
+    display: inline;
 }
 
 .grid-header h1
@@ -233,4 +240,24 @@ body
     {
         display: none;
     }
+}
+
+.disminuir
+{
+    transition: transform 1s;
+}
+
+.disminuir:hover
+{
+    transform: scale(.9);
+}
+
+.crecer
+{
+    transition: transform 5s;
+}
+
+.crecer:hover
+{
+    transform: scale(1.1);
 }
