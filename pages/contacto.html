@@ -5,44 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Principal</title>
         <link rel="shortcut icon" href="./assets/icons/Logo.ico" type="image/x-icon" />
-         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body">
-        <header class="grid-header">
-            <div>
-                <div class="grid-header__logo">
-                    <a href="./index.html">
-                        <img src="./images/Logo.svg" alt="Logo restauramte" />
-                    </a>
-                </div>
-                <h1>Ristorante Bongusta</h1>
-            </div>
-            <div class="grid-header__nav">
-                <nav>
-                    <ul>
+    <body>
+        <header class="bg-primary text-white bg-opacity-75">
+            <div class="container">
+                <div class="row">
+                    <div class="header col-2">
                         <a href="../index.html">
-                            <li>Principal</li>
+                            <img src="../images/Logo.svg" alt="Logo restauramte" />
                         </a>
-                        <a href="../pages/menu.html">
-                            <li>Menú</li>
-                        </a>
-                        <a href="../pages/reservas.html">
-                            <li>Reservas</li>
-                        </a>
-                        <a href="../pages/eventos.html">
-                            <li>Eventos</li>
-                        </a>
-                        <a href="../pages/contacto.html">
-                            <li>Contacto</li>
-                        </a>
-                    </ul>
-                </nav>
+                    </div>
+                    <div class="col-4">
+                        <h1>Ristorante Bongusta</h1>
+                    </div>
+                    <div class="col-6">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="../index.html">Principal</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="../pages/menu.html">Menú</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="../pages/reservas.html">Reservas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="../pages/eventos.html">Eventos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
-        <main>
+        <main class="bg-primary bg-opacity-25">
             <!-- Contacto -->
             <section>
                 <h2>Contacto</h2>
@@ -51,26 +59,26 @@
                         <legend> Envíanos tu comentario</legend>
                         <div class="grid-datos-contacto">
                             <div>
-                                <div>
-                                    <label for="ContactoNombre">Nombre</label>
-                                    <input type="text" id="ContactoNombre" placeholder="Nombre del cliente" />
+                                <div class="row">
+                                    <label class="col-12 col-sm-3 col-md-3 col-lg-2" for="ContactoNombre">Nombre</label>
+                                    <input class="col-8 col-sm-4 col-md-3 col-lg-2 mb-2" type="text" id="ContactoNombre" placeholder="Nombre del cliente" />
                                 </div>
-                                <div>
-                                <label for="ContactoTipo">Tipo</label>
-                                    <select id="ContactoTipo">
+                                <div class="row">
+                                <label class="col-12 col-sm-3 col-md-3 col-lg-2" for="ContactoTipo">Tipo</label>
+                                    <select class="col-8 col-sm-4 col-md-3 col-lg-2 mb-2" id="ContactoTipo">
                                         <option value="">Queja</option>
                                         <option value="">Comentario</option>
                                         <option value="">Consulta</option>
                                     </select>
                                 </div>
-                                <div>
-                                    <label for="ContactoCorreo">correo electrónico</label>
-                                    <input type="email" id="ContactoCorreo" placeholder="@" />
+                                <div class="row">
+                                    <label class="col-12 col-sm-3 col-md-3 col-lg-2" for="ContactoCorreo">correo electrónico</label>
+                                    <input class="col-8 col-sm-4 col-md-3 col-lg-2 mb-2" type="email" id="ContactoCorreo" placeholder="@" />
                                 </div>
                             </div>
-                            <div>
-                                <label for="ContactoMensaje">Mensaje</label>
-                                <textarea id="ContactoMensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <div class="row">
+                                <label class="col-12 col-sm-3 col-md-3 col-lg-2" for="ContactoMensaje">Mensaje</label>
+                                <textarea class="col-8 col-sm-4 col-md-3 col-lg-2" id="ContactoMensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                             </div>
                         </div>
                         <button type="submit">Enviar</button>
