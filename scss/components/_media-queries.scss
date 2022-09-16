@@ -1,0 +1,95 @@
+@media (max-width: 850px)
+{
+    .grid-header h1
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 690px)
+{
+    .grid-header {
+        img
+        {
+            width: 80px;
+        } 
+
+        h1
+        {
+            display: block;
+        }
+    }
+
+
+    .grid-conocenos
+    {
+        grid-template-columns: 1fr;
+
+    }
+
+    .grid-datos-reserva
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-datos-contacto
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px)
+{
+    .grid-header__nav
+    {
+        display: none;
+    }
+   
+   .grid-conocenos
+    {
+    
+        &__video iframe
+        {
+            width: 350px;
+            height: 205px;
+        }
+
+        p
+        {
+            font-size: 12px;
+        }
+    }
+
+    .grid-galeria__imagenes
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+@media (max-width: 360px)
+{
+    .grid-header
+    {
+        grid-template-columns: 1fr;
+
+        &__nav
+        {
+            display: none;
+        }
+    }
+
+    .grid-conocenos__video 
+    {
+        iframe
+        {
+            width: 250px;
+            height: 180px;
+        }
+    } 
+
+    .grid-galeria_imagenes
+    {
+        grid-template-columns: 1fr;
+    }
+}

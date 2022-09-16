@@ -1,0 +1,55 @@
+.grid-platillo
+{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img
+    {
+        width: 100vw;
+        justify-self: center;
+    }
+}
+
+.grid-conocenos
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    p
+    {
+        font-size: 15px;
+    }
+
+    &__video
+    {
+        justify-self: center;
+
+        iframe
+        {
+            width: 500px;
+            height: 290px;
+        }
+    }
+}
+
+.grid-galeria
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+
+    &__imagenes
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 10px;
+
+        img
+        {
+            width: 100%;
+            margin: 5%;
+        }
+    }
+}

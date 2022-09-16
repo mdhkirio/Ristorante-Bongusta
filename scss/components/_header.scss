@@ -1,0 +1,35 @@
+.grid-header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $bgcolorheader; 
+
+    &__nav
+    {
+        justify-self: end;
+        align-self: end;
+    }
+
+    h1
+    {
+        display: inline;
+        font-size: 30px;
+    }
+
+    img
+    {
+        width: 120px;
+    }
+
+    &__nav ul
+    {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__nav li
+    {
+        margin: 5px 10px;
+    }
+
+}

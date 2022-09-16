@@ -1,236 +1,120 @@
-* 
-{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-body
-{
-    /* font-family: 'Roboto'; */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    background-color: #9c9383;
-}
+body {
+  /* font-family: 'Roboto'; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background-color: #9c9383; }
 
-.grid-header
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #897652; 
-}
-
-.grid-header h1
-{
-    display: inline;
-    font-size: 30px;
-}
-
-.grid-header img
-{
-    width: 120px;
-} 
-
-.grid-header__nav
-{
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #897652; }
+  .grid-header__nav {
     justify-self: end;
-    align-self: end;
-}
-
-.grid-header__nav ul
-{
+    align-self: end; }
+  .grid-header h1 {
+    display: inline;
+    font-size: 30px; }
+  .grid-header img {
+    width: 120px; }
+  .grid-header__nav ul {
     list-style-type: none;
-    display: flex;
-}
+    display: flex; }
+  .grid-header__nav li {
+    margin: 5px 10px; }
 
-.grid-header__nav li
-{
-    margin: 5px 10px;
-}
-
-/* index */
-
-.grid-platillo
-{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.grid-platillo img
-{
+.grid-platillo {
+  display: grid;
+  grid-template-columns: 1fr; }
+  .grid-platillo img {
     width: 100vw;
-    justify-self: center;
-}
+    justify-self: center; }
 
-.grid-conocenos
-{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
+.grid-conocenos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center; }
+  .grid-conocenos p {
+    font-size: 15px; }
+  .grid-conocenos__video {
+    justify-self: center; }
+    .grid-conocenos__video iframe {
+      width: 500px;
+      height: 290px; }
 
-.grid-conocenos p
-{
-    font-size: 15px;
-}
-
-.grid-conocenos__video
-{
-    justify-self: center;
-}
-
-.grid-conocenos__video iframe
-{
-    width: 500px;
-    height: 290px;
-}
-
-.grid-galeria
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-}
-
-.grid-galeria_imagenes
-{
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr; }
+  .grid-galeria__imagenes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 10px;
-}
+    gap: 10px; }
+    .grid-galeria__imagenes img {
+      width: 100%;
+      margin: 5%; }
 
-.grid-galeria_imagenes img
-{
-    width: 100%;
-    margin: 5%;
-}
+.grid-mapa {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  justify-self: center; }
 
-/* reservas */
+.grid-datos-reserva {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .grid-datos-reserva__consideraciones {
+    align-self: end; }
 
-.grid-mapa
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100vw;
-    justify-self: center;
-}
+.table_eventos {
+  border-color: black;
+  border-style: double; }
+  .table_eventos ul {
+    list-style-type: none; }
 
-.grid-datos-reserva
-{
-    display: grid;
+.grid-datos-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 850px) {
+  .grid-header h1 {
+    font-size: 20px; } }
+
+@media (max-width: 690px) {
+  .grid-header img {
+    width: 80px; }
+  .grid-header h1 {
+    display: block; }
+  .grid-conocenos {
+    grid-template-columns: 1fr; }
+  .grid-datos-reserva {
+    grid-template-columns: 1fr; }
+  .grid-datos-contacto {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 560px) {
+  .grid-header__nav {
+    display: none; }
+  .grid-conocenos__video iframe {
+    width: 350px;
+    height: 205px; }
+  .grid-conocenos p {
+    font-size: 12px; }
+  .grid-galeria__imagenes {
     grid-template-columns: repeat(2, 1fr);
-}
+    gap: 5px; } }
 
-.grid-datos-reserva__consideraciones
-{
-    align-self: end;
-}
-
-/* eventos */
-
-.table_eventos
-{
-    border-color: black;
-    border-style: double;
-}
-
-.table_eventos ul
-{
-    list-style-type: none;
-}
-
-/* contacto */
-
-.grid-datos-contacto
-{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* media query  */
-
-@media (max-width: 850px)
-{
-    .grid-header h1
-    {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 690px)
-{
-    .grid-header img
-    {
-        width: 80px;
-    } 
-
-    .grid-header h1
-    {
-        display: block;
-    }
-
-    .grid-conocenos
-    {
-        grid-template-columns: 1fr;
-
-    }
-
-    .grid-datos-reserva
-    {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-datos-contacto
-    {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 560px)
-{
-    .grid-conocenos__video iframe
-    {
-        width: 350px;
-        height: 205px;
-    }
-
-    .grid-galeria_imagenes
-    {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-
-    .grid-header__nav
-    {
-        display: none;
-    }
-
-    .grid-conocenos p
-    {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 360px)
-{
-    .grid-conocenos__video iframe
-    {
-        width: 250px;
-        height: 180px;
-    }
-
-    .grid-galeria_imagenes
-    {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-header
-    {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-header__nav
-    {
-        display: none;
-    }
-}
+@media (max-width: 360px) {
+  .grid-header {
+    grid-template-columns: 1fr; }
+    .grid-header__nav {
+      display: none; }
+  .grid-conocenos__video iframe {
+    width: 250px;
+    height: 180px; }
+  .grid-galeria_imagenes {
+    grid-template-columns: 1fr; } }

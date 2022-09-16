@@ -1,0 +1,22 @@
+{
+  "name": "20220915---aplicando-sass",
+  "version": "1.0.0",
+  "description": "Desafio Aplicando SASS",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdhkirio/Ristorante-Bongusta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdhkirio/Ristorante-Bongusta/issues"
+  },
+  "homepage": "https://github.com/mdhkirio/Ristorante-Bongusta#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
