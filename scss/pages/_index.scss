@@ -1,6 +1,5 @@
 .grid-platillo {
-    display: grid;
-    grid-template-columns: 1fr;
+    @extend .container-grid-estático;
 
     img {
         width: 100vw;
@@ -28,16 +27,27 @@
 }
 
 .grid-galeria {
-    display: grid;
-    grid-template-columns: 1fr;
+    @extend .container-grid-estático;
     grid-template-rows: 2fr;
 
+    $colores-borde: (
+        borde1: rgb(107, 172, 47),
+        borde2: rgb(47, 51, 114),
+        borde3: rgb(212, 51, 153),
+        borde4: rgb(199, 131, 2),
+    );
+
+    @each $borde-imagen, $color-borde in $colores-borde {
+        .#{$borde-imagen} {
+            border: 3px solid $color-borde;
+        }
+    }
+
     &__imagenes {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include container-grid-dinamico(4, 1fr);
         justify-items: center;
         gap: 10px;
-
+        
         img {
             width: 100%;
             margin: 5%;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -7,6 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   background-color: #9c9383; }
+
+.container-grid-estático, .grid-platillo, .grid-galeria, .grid-mapa {
+  display: grid;
+  grid-template-columns: 1fr; }
 
 .grid-header {
   display: grid;
@@ -26,12 +31,9 @@ body {
   .grid-header__nav li {
     margin: 5px 10px; }
 
-.grid-platillo {
-  display: grid;
-  grid-template-columns: 1fr; }
-  .grid-platillo img {
-    width: 100vw;
-    justify-self: center; }
+.grid-platillo img {
+  width: 100vw;
+  justify-self: center; }
 
 .grid-conocenos {
   display: grid;
@@ -46,9 +48,15 @@ body {
       height: 290px; }
 
 .grid-galeria {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 2fr; }
+  .grid-galeria .borde1 {
+    border: 3px solid #6bac2f; }
+  .grid-galeria .borde2 {
+    border: 3px solid #2f3372; }
+  .grid-galeria .borde3 {
+    border: 3px solid #d43399; }
+  .grid-galeria .borde4 {
+    border: 3px solid #c78302; }
   .grid-galeria__imagenes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -59,8 +67,6 @@ body {
       margin: 5%; }
 
 .grid-mapa {
-  display: grid;
-  grid-template-columns: 1fr;
   width: 100vw;
   justify-self: center; }
 

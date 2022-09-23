@@ -1,13 +1,11 @@
 .grid-mapa {
-    display: grid;
-    grid-template-columns: 1fr;
+    @extend .container-grid-estático;
     width: 100vw;
     justify-self: center;
 }
 
 .grid-datos-reserva {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include container-grid-dinamico(2, 1fr);
 
     &__consideraciones {
         align-self: end;

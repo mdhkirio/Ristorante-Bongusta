@@ -11,3 +11,13 @@ body
     font-weight: 100;
     background-color: $bgcolorbody;
 }
+
+.container-grid-estático {
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+
+@mixin container-grid-dinamico($columnas, $tamano){
+    display: grid;
+    grid-template-columns: repeat($columnas, $tamano); 
+} 
