@@ -1,53 +1,44 @@
-.grid-platillo
-{
+.grid-platillo {
     display: grid;
     grid-template-columns: 1fr;
 
-    img
-    {
+    img {
         width: 100vw;
         justify-self: center;
     }
 }
 
-.grid-conocenos
-{
+.grid-conocenos {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 
-    p
-    {
+    p {
         font-size: 15px;
     }
 
-    &__video
-    {
+    &__video {
         justify-self: center;
 
-        iframe
-        {
+        iframe {
             width: 500px;
             height: 290px;
         }
     }
 }
 
-.grid-galeria
-{
+.grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
 
-    &__imagenes
-    {
+    &__imagenes {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         gap: 10px;
 
-        img
-        {
+        img {
             width: 100%;
             margin: 5%;
         }

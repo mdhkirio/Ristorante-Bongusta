@@ -1,18 +1,15 @@
-.grid-mapa
-{
+.grid-mapa {
     display: grid;
     grid-template-columns: 1fr;
     width: 100vw;
     justify-self: center;
 }
 
-.grid-datos-reserva
-{
+.grid-datos-reserva {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    &__consideraciones
-    {
+    &__consideraciones {
         align-self: end;
     }
 }
